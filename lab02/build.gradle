@@ -1,0 +1,17 @@
+plugins {
+  id 'application'
+}
+
+repositories {
+  mavenCentral()
+}
+
+task application {
+    mainClassName = 'SimpleTest'
+}
+
+run {
+  args = ['']
+}
+
+apply plugin: 'java'
